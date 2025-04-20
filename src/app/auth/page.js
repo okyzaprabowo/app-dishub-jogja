@@ -9,7 +9,7 @@ import { useAuth } from "../context/authContext";
 export default function Auth() {
   const router = useRouter();
   const {loading, setLoading, setUserId} = useAuth()
-  const [username, setUsername] = useState("thomhaye@gmail.com");
+  const [username, setUsername] = useState("viana@dishub.jogjaprov.go.id");
   const [password, setPassword] = useState("password");
   const [error, setError] = useState("");
   const [loaded, setLoaded] = useState(false);
@@ -30,7 +30,7 @@ export default function Auth() {
 
     try {
       // Simulasi validasi user
-      if (username === "thomhaye@gmail.com" && password === "password") {
+      if (username === "viana@dishub.jogjaprov.go.id" && password === "password") {
         const fakeToken = "mocked.jwt.token";
         Cookies.set("token", fakeToken, { expires: 0.5, path: "/" });
 
@@ -81,7 +81,7 @@ export default function Auth() {
             <div className="flex items-center w-full justify-between">
               <h3 className="text-sm font-semibold">WELCOME BACK</h3>
               <Image 
-                src="/logo-viana.png"
+                src="/image/IC_SMART MOBILITY.png"
                 alt="Logo Viana"
                 width={80}
                 height={80}
